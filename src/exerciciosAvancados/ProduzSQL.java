@@ -17,8 +17,11 @@ public class ProduzSQL implements Runnable{
 
 	@Override
 	public void run() {
+		
 		for(int i = comeco; i < fim; i++){
-			sqls.add("SQL"+i);
+			synchronized(sqls){
+				sqls.add("SQL"+i);
+			}
 		}
 	}
 
