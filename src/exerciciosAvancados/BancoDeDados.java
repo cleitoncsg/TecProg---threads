@@ -2,13 +2,14 @@ package exerciciosAvancados;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Vector;
 
 
 public class BancoDeDados {
 
 	
 	public static void main(String[] args) throws InterruptedException {
-		Collection<String> sqls = new HashSet<String>();
+		Vector<String> sqls = new Vector<String>();
 		
 		ProduzSQL p1 = new ProduzSQL(0, 10000, sqls);
 		Thread t1 = new Thread(p1);
