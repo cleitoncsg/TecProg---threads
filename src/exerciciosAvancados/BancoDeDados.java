@@ -10,7 +10,7 @@ public class BancoDeDados {
 
 	
 	public static void main(String[] args) throws InterruptedException {
-		ArrayList<String> sqls = new ArrayList<String>();
+		HashSet<String> sqls = new HashSet<String>();
 		
 		ProduzSQL p1 = new ProduzSQL(0, 10000, sqls);
 		Thread t1 = new Thread(p1);
