@@ -9,9 +9,9 @@ public class ProduzSQL implements Runnable{
 	
 	private int comeco;
 	private int fim;
-	private HashSet<String> sqls;
+	private Vector<String> sqls;
 	
-	public ProduzSQL (int comeco, int fim, HashSet<String> sqls){
+	public ProduzSQL (int comeco, int fim, Vector<String> sqls){
 		this.comeco = comeco;
 		this.fim = fim;
 		this.sqls = sqls;
